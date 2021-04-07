@@ -40,5 +40,5 @@ function sunsail_function(){
     t=Number(sun_t.value*31536000);
     tg=(3*8*(10**(-6))*(l**2)*t)/(4*p1*3.14*(r1**3)*v1);
     arctg=Math.atan(tg)*(180/3.14);
-    sun_res.innerText='Кут відхилення траєкторії: '+tg;
+    sun_res.innerText='Кут відхилення траєкторії: '+arctg;
 }
