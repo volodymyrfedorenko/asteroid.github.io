@@ -187,3 +187,10 @@ input{
 }
 
 
+@media screen and (max-width: 700px){
+  video,form{
+    width: 100%;
+  }
+}
+
+
