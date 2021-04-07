@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculus Test1</title>
+</head>
+<body>
+    <form name="formmain">
+        <p>Густина астероїда (у кг/м3)</p>
+        <input id="past"><br>
+        <p>Радіус астероїда (у м)</p>
+        <input id="rast"><br>
+        <p>Швидкість астероїда (у м/с)</p>
+        <input id="vast"><br>
+        <p>Маса корабля (у кг)</p>
+        <input id="mship"><br>
+        <p>Швидкість корабля (у м/с)</p>
+        <input id="vship"><br>
+        <input type="button" value="Result" onclick="test();"><br>
+    </form>
+    <p id='res1'>tg=</p>
+    <p id='res2'>arctg=</p>
+    <script>
+        function test(){
+            p1=past.value;
+            r1=rast.value;
+            v1=vast.value;
+            m2=mship.value;
+            v2=vship.value;
+            tg=(m2*v2)/(p1*(4/3)*3.14*(r1**3)*v1);
+            arctg=Math.atan(tg)*(180/3.14);
+            res1.innerText='tg= '+tg;
+            res2.innerText='arctg= '+arctg;
+        }
+    </script>
+</body>
+</html>
